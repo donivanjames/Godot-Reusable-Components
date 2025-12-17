@@ -1,5 +1,5 @@
-# Godot Reusable 2D Components
-Reusable Godot components with guides for use in 2D projects
+# Godot Reusable Components
+Reusable Godot components with guides for use in any project
 
 ## Current Components
 1. Save and load with Godot resources
