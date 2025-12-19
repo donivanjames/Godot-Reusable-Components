@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdnvd7mlnofjm"]
+
+[ext_resource type="PackedScene" uid="uid://brcu5ne18ewym" path="res://3d_world/world_3d.tscn" id="1_3kbpm"]
+[ext_resource type="PackedScene" uid="uid://tkv2tparyweg" path="res://3d_first_person_controller/3d_first_person_controller.tscn" id="2_6abwj"]
+
+[node name="FirstPersonControllerWorld" type="Node3D"]
+
+[node name="World3d" parent="." instance=ExtResource("1_3kbpm")]
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("2_6abwj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.510144, 0)

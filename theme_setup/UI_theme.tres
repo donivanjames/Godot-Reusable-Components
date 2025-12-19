@@ -1,8 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://qlh44g51x5u5"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fsu4r"]
-bg_color = Color(0.03274685, 0.18053171, 0.2036516, 1)
-
-[resource]
-default_font_size = 32
-Panel/styles/panel = SubResource("StyleBoxFlat_fsu4r")

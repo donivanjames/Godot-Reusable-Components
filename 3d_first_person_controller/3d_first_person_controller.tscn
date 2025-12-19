@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://tkv2tparyweg"]
+
+[ext_resource type="Script" uid="uid://cjb2y0lsjlvt3" path="res://3d_first_person_controller/first_person_player_movement.gd" id="1_tg7a0"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_l06py"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cq7rj"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_tg7a0")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_l06py")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_cq7rj")
+
+[node name="HeadPivot" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="HeadPivot"]
